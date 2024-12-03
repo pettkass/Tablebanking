@@ -1,0 +1,22 @@
+<div class="card">
+  <p style="color: green"><%= notice %></p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+  </table>
+
+<%= render @member %>
+
+<div>
+  <%= link_to "Edit this member", edit_member_path(@member),class:"link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" %> |
+  <%= link_to "Back to members", members_path,class:"link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" %>
+<br>
+  <%= button_to "Destroy this member", @member, method: :delete, class: "btn btn-primary" %>
+</div>
+</div>

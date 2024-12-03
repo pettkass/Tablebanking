@@ -1,0 +1,3 @@
+class Contribution < ApplicationRecord
+	
+end

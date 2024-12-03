@@ -1,0 +1,19 @@
+<div class="card">
+  <p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Contributions" %>
+
+<h1>Contributions</h1>
+
+<div id="contributions">
+
+  <% @contributions.each do |contribution| %>
+
+    <%= render contribution %>
+    
+  <% end %>
+</div>
+
+<%= link_to "New contribution", new_contribution_path %>
+
+</div>

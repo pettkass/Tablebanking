@@ -1,0 +1,12 @@
+<% content_for :title, "Editing member" %>
+
+<h1>Editing member</h1>
+
+<%= render "form", member: @member %>
+
+<br>
+
+<div>
+  <%= link_to "Show this member", @member, class:"link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" %> |
+  <%= link_to "Back to members", members_path, class:"link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" %>
+</div>

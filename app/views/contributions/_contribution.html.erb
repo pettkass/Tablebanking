@@ -1,0 +1,18 @@
+<div id="<%= dom_id contribution %>">
+    <table class="table" >
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td><%= contribution.amount %></td>
+            <td><%= contribution.date %></td>
+            <td><%= link_to "Show this contribution", contribution %></td>
+          </tr>
+        </tbody>
+    </table>
+  </div>

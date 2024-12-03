@@ -1,0 +1,14 @@
+<div class="card">
+  <% content_for :title, "New contribution" %>
+
+<h1>New contribution</h1>
+
+<%= render "form", contribution: @contribution %>
+
+<br>
+
+<div>
+  <%= link_to "Back to contributions", contributions_path, class:"link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" %>
+</div>
+
+</div>

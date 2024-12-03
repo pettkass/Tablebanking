@@ -1,0 +1,36 @@
+<div class="">
+  <%= form_with(model: contribution) do |form| %>
+  <% if contribution.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(contribution.errors.count, "error") %> prohibited this contribution from being saved:</h2>
+
+      <ul>
+        <% contribution.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="">
+    <div class="mb-3">
+    <%= form.label :amount, style: "display: block" %>
+    <%= form.number_field :amount,class:"form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :date, style: "display: block", class:"form-label" %>
+    <%= form.datetime_field :date,class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :Email, style: "display: block", class:"form-label" %>
+    <%= form.email_field :Email,class:"form-control" %>
+  </div>
+
+  <div >
+    <%=  form.submit %>
+  </div>
+  </div>
+<% end %>
+
+</div>

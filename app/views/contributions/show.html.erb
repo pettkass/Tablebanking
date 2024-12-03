@@ -1,0 +1,13 @@
+<div class="card">
+  <p style="color: green"><%= notice %></p>
+
+<%= render @contribution %>
+
+<div>
+  <%= link_to "Edit this contribution", edit_contribution_path(@contribution) %> |
+  <%= link_to "Back to contributions", contributions_path %>
+
+  <%= button_to "Destroy this contribution", @contribution, method: :delete %>
+</div>
+
+</div>
